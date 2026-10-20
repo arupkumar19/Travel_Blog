@@ -107,5 +107,63 @@
     ],
     "story": "The train to Haridwar was packed with pilgrims, all bound for the same sacred hills. We arrived at dawn and the station was already alive — vendors, sadhus, families with children, everyone moving in the same direction.\n\nThe drive to Gaurikund the next day wound through cedar forests and narrow gorges, the road hugging the Mandakini all the way up. The base camp at Gaurikund smelled of wood smoke and chai, and we slept early, knowing the real climb started at sunrise.\n\nThe 16-km trek to Kedarnath took everything we had. The trail switches between stone steps, mountain streams, and sheer rocky faces. We overtook mule trains and were overtaken by older pilgrims who seemed to float upward. By the time the temple came into view — that ancient stone tower rising against the white peaks — the exhaustion vanished.\n\nThe two days at Kedarnath were unlike anything else. The air is so thin and clear that the mountains feel close enough to touch. We woke before dawn on the last morning to walk the glacier path, and watched the sunrise set the peaks on fire one by one.\n\nComing down was its own kind of pilgrimage.",
     "photosDir": "pics/Kedarnath"
+  },
+  {
+    "id": "chikkamagalur",
+    "title": "Chikkamagalur",
+    "destination": "Chikkamagalur, Karnataka, India",
+    "month": "January",
+    "monthNumber": 1,
+    "year": 2023,
+    "coverImage": "pics/Chikkamagalur/IMG_7753.JPG",
+    "photosDir": "pics/Chikkamagalur",
+    "description": "Misty hills, coffee estates, and forest trails through the Western Ghats.",
+    "videos": [],
+    "placesVisited": [
+      "Chikkamagalur",
+      "Mullayanagiri",
+      "Baba Budangiri",
+      "Hebbe Falls"
+    ],
+    "story": "The drive into Chikkamagalur winds through endless rows of coffee and cardamom, the air thick with fragrance. Mornings here start before sunrise — mist rolling down the hills, the only sounds being birdsong and the distant hum of a tractor on the estate.\n\nWe trekked up to Mullayanagiri, the highest peak in Karnataka, and stood above the clouds for a good half hour before they swallowed the view again. Hebbe Falls was the other highlight — a two-hour hike through dense forest to reach a waterfall that drops nearly 170 feet into a rock pool.\n\nThe evenings were slow and cold, spent by a bonfire with a mug of the freshest filter coffee we had ever tasted."
+  },
+  {
+    "id": "mysore-2023-04",
+    "title": "Mysore",
+    "destination": "Mysore, Karnataka, India",
+    "month": "April",
+    "monthNumber": 4,
+    "year": 2023,
+    "coverImage": "pics/Mysore/IMG20230407063127.jpg",
+    "photosDir": "pics/Mysore",
+    "description": "The city of palaces — royal grandeur, sandalwood, and silk in the cultural heart of Karnataka.",
+    "videos": [],
+    "placesVisited": [
+      "Mysore Palace",
+      "Chamundi Hills",
+      "Devaraja Market",
+      "Brindavan Gardens"
+    ],
+    "story": "Mysore moves at a gentler pace than most Indian cities, and that is exactly what we needed. The palace was the obvious first stop — we arrived early to beat the crowds and had the marble corridors almost to ourselves, sunlight slanting through the stained-glass ceiling and lighting up the floor in patches of colour.\n\nChamundi Hills at dawn was worth the early alarm: the city spread below in a haze of gold, the temple bells just starting. We spent an afternoon wandering Devaraja Market, buying sandalwood soap and bags of jasmine that filled the car all the way home.\n\nMysore reminded us that not every trip needs to be an adventure. Sometimes slow and beautiful is enough."
+  },
+  {
+    "id": "pondicherry-2019-09",
+    "title": "Pondicherry",
+    "destination": "Pondicherry, India",
+    "month": "September",
+    "monthNumber": 9,
+    "year": 2019,
+    "coverImage": "pics/Pondicherry/IMG_20190927_104231.jpg",
+    "photosDir": "pics/Pondicherry",
+    "description": "French boulevards, Tamil temples, and the quiet rhythm of a coastal town unlike anywhere else in India.",
+    "videos": [],
+    "placesVisited": [
+      "French Quarter",
+      "Auroville",
+      "Promenade Beach",
+      "Sri Aurobindo Ashram",
+      "Paradise Beach"
+    ],
+    "story": "Pondicherry feels like two cities sharing one shoreline. On one side the French Quarter, all yellow walls and bougainvillea tumbling over wrought-iron balconies. On the other, the Tamil Quarter — dense, loud, colourful, and very much alive.\n\nWe spent our first morning cycling through the French streets before the heat set in, stopping at a bakery that served proper croissants and strong coffee. Auroville was a strange and peaceful detour — the Matrimandir at its centre, a golden sphere in the middle of a forest, still under some kind of permanent contemplation.\n\nThe evenings on the Promenade were the best part: the sea breeze, street food vendors, families out for their evening walk, and the old lighthouse blinking steadily over it all."
   }
 ]
