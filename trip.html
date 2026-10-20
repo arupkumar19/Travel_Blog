@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip — Anu-Arup Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Anu-Arup Travel</a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Trip hero -->
+    <section class="trip-hero" id="trip-hero" aria-label="Trip cover">
+      <div class="container">
+        <div class="trip-hero__content">
+          <p class="trip-hero__meta" id="trip-hero-meta">Loading...</p>
+          <h1 class="trip-hero__title" id="trip-hero-title">Loading...</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trip body -->
+    <div class="trip-body" id="trip-body">
+      <div class="container">
+        <div class="trip-content">
+
+          <!-- Story -->
+          <section class="trip-section" aria-labelledby="story-heading">
+            <h2 class="trip-section__title" id="story-heading">The Story</h2>
+            <p class="trip-story" id="trip-story"></p>
+          </section>
+
+          <!-- Photo gallery -->
+          <section class="trip-section" aria-labelledby="gallery-heading">
+            <h2 class="trip-section__title" id="gallery-heading">Photos</h2>
+            <div class="gallery-grid" id="trip-gallery"></div>
+          </section>
+
+          <!-- Videos -->
+          <section class="trip-section" id="videos-section" aria-labelledby="videos-heading">
+            <h2 class="trip-section__title" id="videos-heading">Videos</h2>
+            <div id="trip-videos"></div>
+          </section>
+
+          <!-- Places visited -->
+          <section class="trip-section" aria-labelledby="places-heading">
+            <h2 class="trip-section__title" id="places-heading">Places Visited</h2>
+            <ul class="trip-places" id="trip-places" aria-label="Places visited on this trip"></ul>
+          </section>
+
+          <!-- Prev / Next navigation -->
+          <nav class="trip-nav" aria-label="Trip navigation">
+            <a href="trips.html" id="trip-prev" aria-label="Previous trip">&larr;</a>
+            <a href="trips.html" id="trip-next" aria-label="Next trip">&rarr;</a>
+          </nav>
+
+          <div class="trip-nav__back">
+            <a href="trips.html">&larr; Back to all trips</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Anu-Arup Travel &nbsp;&middot;&nbsp; Built with HTML, CSS &amp; JavaScript &nbsp;&middot;&nbsp;
+        Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/gallery.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    initMobileNav();
+    initTripDetailPage();
+  </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Anu-Arup Travel</title>
+  <meta name="description" content="About Anu-Arup Travel — a personal blog for trips, photos, and stories.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Anu-Arup Travel</a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <h1 class="page-hero__title" id="page-title">About</h1>
+        <p class="page-hero__sub">The story behind the journal</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="About content">
+      <div class="container">
+        <div class="about-content">
+
+          <p>
+            Welcome to Anu-Arup Travel — a personal record of the places I have visited, the things
+            I have seen, and the stories worth keeping. This site is organized by year, month, and
+            destination, so every trip is easy to find later.
+          </p>
+          <p>
+            <!-- Replace the paragraph below with your own introduction. -->
+            I travel to slow down, look properly, and come back with something to remember. This
+            journal is that record — part photo album, part diary, part itinerary for anyone who
+            wants to go to the same places.
+          </p>
+
+          <h2 class="about-heading">Adding a New Trip</h2>
+          <p>This site runs entirely from a single JSON file. No database or backend is needed.</p>
+          <ol class="about-tips" style="margin-top:1rem;">
+            <li>
+              Create a folder for the trip's photos under
+              <span class="code-inline">assets/images/&lt;year&gt;/&lt;month-destination&gt;/</span>.
+            </li>
+            <li>
+              Add a cover photo (e.g. <span class="code-inline">cover.jpg</span>) and any gallery
+              photos. Compress and resize images before committing to keep the repo lightweight.
+            </li>
+            <li>
+              Open <span class="code-inline">data/trips.json</span> and add a new trip object at the
+              top of the array. Copy an existing entry as a template and update every field.
+            </li>
+            <li>
+              Set the correct <span class="code-inline">coverImage</span> path and add each photo
+              to the <span class="code-inline">photos</span> array with a caption.
+            </li>
+            <li>
+              If you have a video, paste the YouTube embed URL into the
+              <span class="code-inline">videos</span> array.
+            </li>
+            <li>
+              Preview locally: open a terminal in the project folder and run
+              <span class="code-inline">python3 -m http.server 8080</span>, then open
+              <span class="code-inline">http://localhost:8080</span> in your browser.
+            </li>
+            <li>
+              When everything looks right, commit your changes and push to GitHub. The site will
+              update automatically on GitHub Pages.
+            </li>
+          </ol>
+
+          <h2 class="about-heading">Deployment</h2>
+          <p>
+            This site is hosted on GitHub Pages. After pushing to the repository, open
+            <strong>Settings &rarr; Pages</strong>, select your branch and the root folder, then
+            save. The published URL will be
+            <span class="code-inline">https://YOUR-USERNAME.github.io/travel-blog/</span>.
+          </p>
+          <p style="margin-top:1.25rem;">
+            Use relative asset paths such as
+            <span class="code-inline">assets/images/...</span> throughout the JSON so photos load
+            correctly under the repository's URL path.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Anu-Arup Travel &nbsp;&middot;&nbsp; Built with HTML, CSS &amp; JavaScript &nbsp;&middot;&nbsp;
+        Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/gallery.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    initMobileNav();
+  </script>
+</body>
+</html>

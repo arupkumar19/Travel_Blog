@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trips — Anu-Arup Travel</title>
+  <meta name="description" content="Browse all trips from Anu-Arup Travel, filtered by month and destination.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Anu-Arup Travel</a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <h1 class="page-hero__title" id="page-title">All Trips</h1>
+        <p class="page-hero__sub">Every adventure, in one place</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Trip listings">
+      <div class="container">
+
+        <!-- Active year filter tag (shown when ?year= param is present) -->
+        <span class="filter-active-tag" id="active-year-tag" style="display:none;"></span>
+
+        <!-- Filter bar -->
+        <div class="filter-bar" role="search" aria-label="Filter trips">
+          <div class="filter-group">
+            <label for="filter-month" class="filter-label">Month</label>
+            <select id="filter-month" class="filter-select" aria-label="Filter by month">
+              <option value="">All Months</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-dest" class="filter-label">Destination</label>
+            <input
+              type="search"
+              id="filter-dest"
+              class="filter-input"
+              placeholder="Search destination or title..."
+              autocomplete="off"
+              aria-label="Search by destination or trip title"
+            >
+          </div>
+          <span class="filter-count" id="results-count" aria-live="polite"></span>
+        </div>
+
+        <!-- Trip cards -->
+        <div class="trips-grid" id="trips-container" aria-label="Trip cards">
+          <p class="loading-state">Loading trips</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Anu-Arup Travel &nbsp;&middot;&nbsp; Built with HTML, CSS &amp; JavaScript &nbsp;&middot;&nbsp;
+        Hosted on <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/gallery.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    initMobileNav();
+    initTripsPage();
+  </script>
+</body>
+</html>
