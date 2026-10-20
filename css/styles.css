@@ -171,28 +171,54 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
 .home-hero__content {
   position: relative;
   z-index: 1;
-  text-align: center;
+  text-align: left;
   color: #fff;
   width: 100%;
   padding: 2rem 0;
+  max-width: 780px;
+}
+.home-hero__label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #C9A96E;
+  margin-bottom: 1.25rem;
+  opacity: 0.9;
 }
 .home-hero__title {
-  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-size: clamp(2.8rem, 8vw, 5.5rem);
   font-weight: 700;
   letter-spacing: -0.03em;
-  margin-bottom: 1rem;
+  line-height: 1.08;
+  margin-bottom: 1.5rem;
   text-shadow: 0 2px 16px rgba(0,0,0,.35);
 }
-.home-hero__subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.3rem);
-  font-weight: 300;
-  opacity: 0.88;
-  margin-bottom: 2.5rem;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
+.home-hero__title-italic {
+  font-style: italic;
+  font-weight: 700;
+  color: #C9A96E;
+  display: block;
 }
-.home-hero__cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.home-hero__subtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 300;
+  opacity: 0.85;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+.home-hero__cta-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+.home-hero__cta-btn {
+  border: 1.5px solid rgba(255,255,255,0.7) !important;
+  color: #fff !important;
+  padding: 0.85rem 2rem !important;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+.home-hero__cta-btn:hover {
+  background: rgba(255,255,255,0.12) !important;
+  border-color: #fff !important;
+}
 .home-hero__scroll {
   position: absolute;
   bottom: 2rem;
@@ -708,7 +734,7 @@ h1, h2, h3, h4 { line-height: 1.2; font-weight: 700; }
   .filter-bar { flex-direction: column; }
   .filter-count { margin-left: 0; }
   .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.5rem; }
-  .home-hero__cta-group { flex-direction: column; align-items: center; }
+  .home-hero__cta-group { flex-direction: column; align-items: flex-start; }
 }
 
 @media (max-width: 480px) {
