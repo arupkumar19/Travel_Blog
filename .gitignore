@@ -1,3 +1,9 @@
 *.mp4
 *.MP4
 .DS_Store
+*.cr2
+*.CR2
+*.raw
+*.RAW
+*.arw
+*.ARW
