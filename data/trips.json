@@ -1,56 +1,5 @@
 [
   {
-    "id": "pune-road-trip-2026-07",
-    "title": "Pune Road Trip",
-    "destination": "Pune, Maharashtra, India",
-    "month": "July",
-    "monthNumber": 7,
-    "year": 2026,
-    "coverImage": "pics/pune-road-trip-2026-07/cover.jpg",
-    "description": "A scenic road trip through the Western Ghats, filled with lush valleys, historic forts, and local flavours.",
-    "videos": [
-      {
-        "title": "Trip highlights reel",
-        "url": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    ],
-    "placesVisited": [
-      "Sinhagad Fort",
-      "Lavasa",
-      "Lonavala",
-      "Khandala",
-      "Pune City Centre"
-    ],
-    "story": "We set off early on a Saturday morning with the monsoon clouds already gathering over the hills. The drive through the Ghats was breathtaking — every hairpin bend revealed a new curtain of green.\n\nWe stopped at Sinhagad Fort just as the morning mist was lifting, and the view across the valley was worth every step of the climb. A local family shared their packed breakfast with us at the summit, and we sat there for longer than we planned, watching the clouds move through the valleys below.\n\nThe rest of the day was a blur of roadside vada pav, spontaneous detours, and the kind of conversations you only have when you're far from home. By the time we rolled back into the city, sunburned and grinning, we were already planning the next one.",
-    "photosDir": "pics/pune-road-trip-2026-07"
-  },
-  {
-    "id": "goa-december-2025-12",
-    "title": "Goa December Getaway",
-    "destination": "Goa, India",
-    "month": "December",
-    "monthNumber": 12,
-    "year": 2025,
-    "coverImage": "pics/goa-december-2025-12/cover.jpg",
-    "description": "Sun, sea, and spice — a long-overdue trip to Goa during the festive season.",
-    "videos": [
-      {
-        "title": "Goa sunsets and streets",
-        "url": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-      }
-    ],
-    "placesVisited": [
-      "Anjuna Beach",
-      "Vagator Beach",
-      "Old Goa",
-      "Panaji",
-      "Dudhsagar Falls",
-      "Spice Plantation"
-    ],
-    "story": "December in Goa is everything the postcards promise and a little more. The beaches were quieter in the mornings, before the crowds arrived, and we made a habit of catching sunrise with coffee from a shack already busy with fishermen.\n\nThe Portuguese architecture of Old Goa was stunning — those white basilicas glowing in the afternoon heat. We ended each evening at a different beach shack, eating prawn curry and listening to live music. The spice plantation tour was a highlight neither of us expected: walking through rows of vanilla, cardamom, and nutmeg, learning how so much of what we cook every day starts here.\n\nIt was exactly the reset we needed.",
-    "photosDir": "pics/goa-december-2025-12"
-  },
-  {
     "id": "kedarnath-2021-10",
     "title": "Kedarnath Yatra",
     "destination": "Kedarnath, Uttarakhand, India",
