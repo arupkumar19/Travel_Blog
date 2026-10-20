@@ -165,5 +165,25 @@
       "Paradise Beach"
     ],
     "story": "Pondicherry feels like two cities sharing one shoreline. On one side the French Quarter, all yellow walls and bougainvillea tumbling over wrought-iron balconies. On the other, the Tamil Quarter — dense, loud, colourful, and very much alive.\n\nWe spent our first morning cycling through the French streets before the heat set in, stopping at a bakery that served proper croissants and strong coffee. Auroville was a strange and peaceful detour — the Matrimandir at its centre, a golden sphere in the middle of a forest, still under some kind of permanent contemplation.\n\nThe evenings on the Promenade were the best part: the sea breeze, street food vendors, families out for their evening walk, and the old lighthouse blinking steadily over it all."
+  },
+  {
+    "id": "gokarna",
+    "title": "Gokarna",
+    "destination": "Gokarna, Karnataka, India",
+    "month": "September",
+    "monthNumber": 9,
+    "year": 2021,
+    "coverImage": "pics/Gokarna/IMG_20210904_103250.jpg",
+    "photosDir": "pics/Gokarna",
+    "description": "Secluded beaches, ancient temples, and slow days on the Karnataka coast.",
+    "videos": [],
+    "placesVisited": [
+      "Om Beach",
+      "Kudle Beach",
+      "Half Moon Beach",
+      "Mahabaleshwar Temple",
+      "Paradise Beach"
+    ],
+    "story": "Gokarna sits quietly on the Karnataka coast, far enough from the tourist trail to still feel like it belongs to the people who live there. The town itself is built around the Mahabaleshwar Temple — narrow lanes, pilgrims, flower sellers, the smell of incense at every corner.\n\nThe beaches are the real draw though. Om Beach, shaped like the symbol it is named after, was our base for most of the trip — mornings in the water, afternoons reading in a hammock at one of the small shacks behind the dunes. Half Moon and Paradise Beach required a boat or a long cliff walk, which kept the crowds away.\n\nWe came back in 2023 to find it largely unchanged, which felt like a small miracle."
   }
 ]
