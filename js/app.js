@@ -227,17 +227,31 @@ async function initTripDetailPage() {
     }
 
     const galleryEl = document.getElementById('trip-gallery');
-    if (galleryEl && trip.photos && trip.photos.length) {
-      galleryEl.innerHTML = trip.photos.map((p, i) =>
-        '<div class="gallery-item" data-lightbox-index="' + i + '">' +
-          '<img class="gallery-item__img" src="' + p.src + '" alt="' + (p.caption || '') + '" loading="lazy"' +
-          ' onerror="this.style.display=\'none\'">' +
-          '<div class="gallery-item__overlay">' +
-            '<span class="gallery-item__caption">' + (p.caption || '') + '</span>' +
-          '</div>' +
-        '</div>'
-      ).join('');
-      Lightbox.init(trip.photos, galleryEl);
+    if (galleryEl && trip.photosDir) {
+      let photos = [];
+      try {
+        const pr = await fetch(trip.photosDir + '/photos.json');
+        if (pr.ok) {
+          const files = await pr.json();
+          photos = files.map(f =>
+            typeof f === 'string'
+              ? { src: trip.photosDir + '/' + f, caption: '' }
+              : { src: trip.photosDir + '/' + f.file, caption: f.caption || '' }
+          );
+        }
+      } catch (_) {}
+      if (photos.length) {
+        galleryEl.innerHTML = photos.map((p, i) =>
+          '<div class="gallery-item" data-lightbox-index="' + i + '">' +
+            '<img class="gallery-item__img" src="' + p.src + '" alt="' + (p.caption || '') + '" loading="lazy"' +
+            ' onerror="this.closest(\'.gallery-item\').style.display=\'none\'">' +
+            '<div class="gallery-item__overlay">' +
+              '<span class="gallery-item__caption">' + (p.caption || '') + '</span>' +
+            '</div>' +
+          '</div>'
+        ).join('');
+        Lightbox.init(photos, galleryEl);
+      }
     }
 
     const videosSection = document.getElementById('videos-section');
@@ -286,9 +300,21 @@ async function initGalleryPage() {
   const countEl   = document.getElementById('gallery-count');
   try {
     const trips = await fetchTrips();
-    const allPhotos = trips.flatMap(t =>
-      (t.photos || []).map(p => ({ src: p.src, caption: p.caption, tripTitle: t.title, tripId: t.id }))
-    );
+    const allPhotos = [];
+
+    for (const trip of trips) {
+      if (!trip.photosDir) continue;
+      try {
+        const res = await fetch(trip.photosDir + '/photos.json');
+        if (!res.ok) continue;
+        const files = await res.json();
+        for (const f of files) {
+          const src     = trip.photosDir + '/' + (typeof f === 'string' ? f : f.file);
+          const caption = typeof f === 'string' ? '' : (f.caption || '');
+          allPhotos.push({ src, caption, tripTitle: trip.title, tripId: trip.id });
+        }
+      } catch (_) {}
+    }
 
     if (countEl) countEl.textContent = allPhotos.length + ' photos';
 
